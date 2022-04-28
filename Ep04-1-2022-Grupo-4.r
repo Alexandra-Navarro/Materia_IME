@@ -14,7 +14,7 @@ library(dplyr)
 
 # Datos (Cambiar directorio según corresponda) 
 
-datos 
+datos<- read.csv2("C:/Users/alena/Downloads/EP04-datos.csv")
 # ----------------------------------------------------------------------------------------------- # 
 cat("\n\nGrupo 04 - Ejercicio Práctico 04\n") 
 cat("\n-------------------------------------------------------------------------\n") 

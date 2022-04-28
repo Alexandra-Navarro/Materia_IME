@@ -6,7 +6,7 @@ library(patchwork)
 # ----------- PARTE 1 ----------
 
 
-población <- read.csv2("C:/Users/osswa/OneDrive/Escritorio/IME/EP02 Datos Casen 2017.csv")
+población <- read.csv2("C:/Users/alena/Downloads/EP02 Datos Casen 2017.csv")
 tamaño <- nrow(población)
 ingreso <- as.numeric(población[["ytot"]])
 poda <- 0.2

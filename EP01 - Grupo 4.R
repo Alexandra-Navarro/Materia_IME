@@ -10,7 +10,7 @@ library(ggplot2)
 #Objetivo: saber que dia los casos con síntomas fueron mayores en coquimbo entre
 #las fechas 01-may-2020 y el 31-oct-2020
 
-datos <- read.csv2("C:/Users/osswa/Downloads/EP01 Datos Covid.csv")
+datos <- read.csv2("C:/Users/alena/Downloads/EP01 Datos Covid.csv")
 #leemos el archivo csv con los datos de contagios
 #Coquimbo corresponde a la fila 5
 coquimbo <- datos[datos$Region == 'Coquimbo',]

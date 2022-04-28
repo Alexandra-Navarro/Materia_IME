@@ -13,7 +13,7 @@ mat <- matrix(c(1, 2),
 layout(mat = mat)
 
 #Datos
-datos <- read.csv2("C:/Users/osswa/Downloads/EP02 Datos Casen 2017.csv")
+datos <- read.csv2("C:/Users/alena/Downloads/EP02 Datos Casen 2017.csv")
 hombres <- datos[datos$sexo == 'Hombre',]
 rural <- hombres[hombres$zona == 'Rural',]
 urbana <- hombres[hombres$zona == 'Urbano',]
