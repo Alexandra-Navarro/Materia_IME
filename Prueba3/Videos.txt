@@ -1,0 +1,46 @@
+Regresión lineal Múltiple
+
+Se hace un diagrama de dispersión
+plot(salrio actual, educ)
+
+Para corroborar correlación
+cor.test () pearson 
+se ve el p value y si es menor a 0.5 se confirma , es decir se rechaza la hipótesis nula
+Se verifica R valor alejado a 0
+
+modelo1 <-lm (salario actual ~ salario incial)
+modelo2<-lm(salario actual ~ salarioinicial + educ
+
+summary(modelo2)
+si el modelo es válido se verifica el p value y como el p es menor se confirma el modelo
+
+Adjusted R cuadrado : mucho más riguroso 0.79 = 79% de la variabilidad es predicha con el modelo
+
+Coeficientes revisar si aportan
+modelo2$coefficients 
+Verificamos verificancia y como el p value es menor se confirma que aporta (en salario inicial y edc)  
+RLS
+
+plot(data$salrioactual ~ salarioinicial)
+ambos aumentan
+
+analizamos correlacion lineal
+cor.test(data$salrioactual ~ salarioinicial)
+verificamos por p value que existe una correlación lineal y con alta correlación con sentido directo (+)
+
+Modelo
+modelo1<- lm(data$salrioactual ~ salarioinicial)
+summary(modelo1)
+
+Estadistico f y p value (menor a 0.5) El modelo es válido
+Adjusted R cuadrado (bondad de ajuste) 77% de la varibilidad de la variable y es predicho por la variable x
+
+Verificamos verificancia
+
+modelo$coefficients 
+plot(data$salrioactual ~ salarioinicial)
+abline(modelo1, col="red")
+
+
+
+
